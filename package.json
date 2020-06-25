@@ -1,0 +1,33 @@
+{
+  "name": "react-ts-template",
+  "version": "0.0.1",
+  "description": "react template with ts, webpack, babel",
+  "author": "cdbrouk@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config webpack/webpack.development.js",
+    "product": "webpack --config webpack/webpack.production.js"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
