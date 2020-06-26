@@ -38,6 +38,35 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(jpeg|jpg|png|svg|)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+          {
+            options: {
+              publicPath: './dist/',
+              name: '[name].[ext]?[hash]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'url-loader',
+          },
+          {
+            options: {
+              publicPath: './dist/',
+              name: '[name].[ext]?[hash]',
+              limit: 10000,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
